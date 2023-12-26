@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #b5120300;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#taskList {
+    width: 50%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+#taskList:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#taskList h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#taskList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+#taskList li:hover {
+    background-color: #f2f2f2;
+}
+
+#taskList li:active {
+    cursor: grabbing;
+}
+
+.task-content {
+    flex-grow: 1;
+    padding-right: 1rem;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-color {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#taskInput,
+#dueDateInput,
+#colorInput {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus,
+#dueDateInput:focus,
+#colorInput:focus {
+    border-color: #3498db; /* Change to your desired focus color */
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.calendar-day {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: #f2f2f2;
+}
+
+.selected-day {
+    background-color: #3498db;
+    color: white;
+}
+/* Add these styles to your existing CSS */
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #2980b9;
+}
+/* Add these styles to your existing CSS */
+
+header {
+    background-color: #36090100;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#menu-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    background-color: #2980b9;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #db5b34, #2c3e50);
+    background-size: cover;
+    background-attachment: fixed;
+}

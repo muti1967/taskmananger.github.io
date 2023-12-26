@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Interactive Calendar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div id="menu-bar">
+            <nav>
+                <a href="indexedit.html" id="homeLink" class="nav-link">Home</a>
+                <a href="about.html" id="aboutlink" class="nav-link">About</a>
+                <!-- Add more links for additional pages -->
+            </nav>
+        </div>
+        <h1>Task manager </h1>
+        <h1>(Made for Success) </h1>
+    </header>
+
+    <!-- Rest of the code remains unchanged -->
+
+</body>
+
+
+
+<body>
+
+    <header>
+      
+    </header>
+
+    <main>
+        <!-- Task List Section -->
+        <div id="taskList">
+            <h2>Task List</h2>
+            <ul id="tasks">
+                <!-- Task list content goes here -->
+                <li draggable="true">
+                    <div class="task-content" style="color: #3498db;">
+                        Example Task 1
+                        <span>Due: 2023-12-31</span>
+                    </div>
+                    <div class="task-actions">
+                        <div class="task-color" style="background-color: #3498db;"></div>
+                        <button onclick="removeTask(this.parentNode.parentNode)">Remove</button>
+                    </div>
+                </li>
+                <li draggable="true">
+                    <div class="task-content" style="color: #e74c3c;">
+                        Example Task 2
+                        <span>Due: 2023-12-30</span>
+                    </div>
+                    <div class="task-actions">
+                        <div class="task-color" style="background-color: #e74c3c;"></div>
+                        <button onclick="removeTask(this.parentNode.parentNode)">Remove</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- Form to add new tasks -->
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Enter a new task" required>
+                <input type="date" id="dueDateInput" required>
+                <input type="color" id="colorInput" value="#3498db">
+                <button type="button" onclick="addTask()">Add Task</button>
+                <button type="button" onclick="reorganizeTasks()">Reorganize Tasks</button>
+            </form>
+        </div>
+
+        <!-- Interactive Calendar Section -->
+        <div id="calendar"></div>
+    </main>
+
+</body>
+
+</html>
